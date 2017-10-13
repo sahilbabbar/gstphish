@@ -1,5 +1,5 @@
 # GSTPhish
-### Simple web app to trick login activity.
+Simple web app to trick login activity.
 
 ## Setup
 1. Run the following in terminal:
