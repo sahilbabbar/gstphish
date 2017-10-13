@@ -1,6 +1,8 @@
 # GSTPhish
 Simple web app to trick login activity.
 
+**Disclaimer: Use it at your own risk and at your own sole responsibility. The author(s) will not be responsible for any mishap(s).**
+
 ## Setup
 1. Run the following in terminal:
     ```
