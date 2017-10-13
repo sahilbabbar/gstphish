@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="Login">
+        <meta name="description" content="Login to GST Portal">
+        <title>Goods & Service Tax (GST) | Login</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="emblem.png">
+    </head>
+    <body ng-app="gstApp" style="font-family: verdana;background-color: #ddd;">
+        <div style="padding: 10px; background-color: #051547;">
+            <div class="container">
+                <div class="text-right">
+                    <a href="" style="color: #fff;font-size: 12px;">Skip to Main Content</a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #0a1e59;">
+            <div class="container">
+                <div style="padding-top: 5px; padding-bottom: 10px;">
+                    <a href="">
+                        <img src="emblem.png" style="display: inline-block;">
+                    </a>
+                    <h1 style="color: #fff;font-size: 2em;display: inline-block;padding-left: 10px;">Goods and Services Tax</h1>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" style="background-color: #2d4f86;border-color: #2d4f86;border-radius: 0;margin-bottom: 0;">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a style="color: #fff;" href="#">Home</a></li>
+                        <li><a style="color: #000;background-color: #17c4bb;" href="#">Services <span class="caret"></span></a></li>
+                        <li><a style="color: #fff;" href="#">GST Law <span class="caret"></span></a></li>
+                        <li><a style="color: #fff;" href="#">Downloads <span class="caret"></span></a></li>
+                        <li><a style="color: #fff;" href="#">Search Taxpayers <span class="caret"></span></a></li>
+                        <li><a style="color: #fff;" href="#">Help <span class="caret"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="background-color: #ddd;">
+            <div class="row">
+                <div class="col-xs-12" style="padding-left: 0;">
+                    <ol class="breadcrumb" style="margin-bottom: 0;border-radius: 0;background-color: #ddd;padding-left: 0;">
+                        <li><a href="#">Home</a></li>
+                        <li><a style="color: #000;">Login</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background-color: #fff;" ng-controller="LoginCtrl">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12">
+                    <h4>Login</h4>
+                    <hr>
+                    <p class="text-right mand-text">indicates mandatory fields</p>
+                    <form ng-submit="getUserDetails()">
+                        <div class="form-group">
+                            <label class="m-cir" style="font-weight: 400;word-wrap: break-word !important;">Username</label>
+                            <input class="form-control" ng-model="user.username" type="text" placeholder="Enter Username" style="border-radius: 0;">
+                        </div>
+                        <div class="form-group">
+                            <label class="m-cir" style="font-weight: 400;word-wrap: break-word !important;">Password</label>
+                            <input class="form-control" ng-model="user.password" type="password" placeholder="Enter Password" style="border-radius: 0;">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="border-radius: 0;background-color: #2c4e86;border-color: #2c4e86;color: #fff;padding: 6px 25px;margin-top: 2%;">LOGIN</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2%;margin-bottom: 5%;">
+                <div class="col-lg-4 col-lg-offset-3 col-md-6 col-sm-6">
+                    <a href="">Forgot Username</a>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-12">
+                    <a href="">Forgot Password</a>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 5%;">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <p class="help-block"><strong><i class="fa fa-info-circle"></i> First time login: </strong> If you are logging in for the first time, fill above details.</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #13325e;">
+            <div class="container">
+                <div class="row" style="margin-top: 3%;">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <strong style="color: #56caf0;">Website Policies</strong>
+                        <p style="color: #bed2dd;margin-top: 5%;">Website Policy</p>
+                        <p style="color: #bed2dd;">Hyperlink Policy</p>
+                        <p style="color: #bed2dd;">Disclaimer</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <strong style="color: #56caf0;">Related Sites</strong>
+                        <p style="color: #bed2dd;margin-top: 5%;">Central Board of Excise and Customs</p>
+                        <p style="color: #bed2dd;">State Tax Websites</p>
+                        <p style="color: #bed2dd;">National Portal </p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <strong style="color: #56caf0;">Help</strong>
+                        <p style="color: #bed2dd;margin-top: 5%;">System Requirements</p>
+                        <p style="color: #bed2dd;">User Manuals, Videos and FAQs</p>
+                        <p style="color: #bed2dd;">GST Media</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <strong style="color: #56caf0;">Contact Us</strong>
+                        <p style="color: #bed2dd;margin-top: 5%;">Help Desk Number:
+                            0120-4888999</p>
+                        <p style="color: #bed2dd;">Write To Us:
+                            helpdesk[at]gst[dot]gov[dot]in</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="border: 1px solid #475f82;margin-top: 5%;">
+            <div style="font-size: 14px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <p style="color: #8ba8ba;margin-bottom:0;">© 2016-17 Goods and Services Tax Network</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <p style="color: #8ba8ba;margin-bottom:0;">Site Last Updated on 10-10-2017</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <p style="color: #8ba8ba;margin-bottom:0;">Designed & Developed by GSTN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="border: 1px solid #475f82;margin-bottom: 0;">
+            <div style="background-color: #2c4e86;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p style="color: #fff;padding: 5px;font-size: 12px;margin-top: 10px;">Site best viewed at 1024 x 768 resolution in Internet Explorer 10+, Google Chrome 49+, Firefox 45+ and Safari 6+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

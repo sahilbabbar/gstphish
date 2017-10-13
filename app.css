@@ -1,0 +1,16 @@
+.m-cir:after {
+    content: "\f111";
+    font-family: 'fontAwesome';
+    color: #ff0000;
+    font-size: 6px;
+    vertical-align: super;
+    padding-left: 3px;
+}
+.mand-text:before {
+    content: "\f111";
+    font-family: 'fontAwesome';
+    color: #ff0000;
+    font-size: 8px;
+    vertical-align: super;
+    padding-right: 3px;
+}
